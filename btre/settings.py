@@ -1,3 +1,4 @@
+
 """
 Django settings for btre project.
 
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'btredb',
         'USER':'yasmeen',
         'PASSWORD':'123456',
@@ -139,7 +140,7 @@ MEDIA_URL='/media/'
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
-   
+
 }
 # Email config
 EMAIL_HOST='smtp.gmail.com'
